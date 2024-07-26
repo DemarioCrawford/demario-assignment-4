@@ -9,7 +9,9 @@ import java.util.List;
 
 //read, parse the file, and create a list of students from it
 public class FileService {
+
 	public static List<Student> readCVS(String filePath) throws IOException {
+
 		List<Student> students = new ArrayList<>();
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
 		String line;
@@ -22,7 +24,8 @@ public class FileService {
 		return students;
 
 	}
-	//writing in the student fields or parameters
+
+	// writing in the student fields or parameters
 	public static void writeCSV(String filePath, List<Student> students) throws IOException {
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath));
 		bufferedWriter.write("Student ID,Student Name,Course,Grade");

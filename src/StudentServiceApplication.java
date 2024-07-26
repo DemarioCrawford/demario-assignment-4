@@ -4,6 +4,8 @@ import java.util.List;
 
 public class StudentServiceApplication {
 
+	private static final Integer Grade = null;
+
 	public static void main(String[] args) throws IOException {
 		
 		
