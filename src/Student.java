@@ -1,10 +1,13 @@
+import java.util.Objects;
 
 public class Student {
+	//fields
 	String studentID;
 	String studentName;
 	String course;
 	Integer grade;
 	
+	//student constructor
 	public Student (String studentID, String studentName, String course, Integer grade) {
 		this.studentID = studentID;
 		this.studentName = studentName;
@@ -12,6 +15,7 @@ public class Student {
 		this.grade = grade;
 	}
 	
+	//getters and setters
 	public String getStudentID() {
 		return studentID;
 	}
@@ -36,7 +40,7 @@ public class Student {
 	public void setGrade(Integer grade) {
 		this.grade = grade;
 	}
-	
+	//Override toString method and return a String with all the fields
 	@Override
 	public String toString() {
 		return studentID + "," + studentName + "," + course + "," + grade;
